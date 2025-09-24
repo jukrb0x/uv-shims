@@ -13,7 +13,7 @@ path = "src/python.rs"
 
 [[bin]]
 name = "python2"
-path = "src/python.rs"
+path = "src/python2.rs"
 
 [[bin]]
 name = "python3"

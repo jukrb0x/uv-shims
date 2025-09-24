@@ -7,7 +7,7 @@ fn main() {
     let version_position = args.iter().position(|x| x == "-2" || x == "-3");
 
     if let Some(pos) = version_position {
-        // take out the version selector
+        // Take out the version selector
         let mut args = args.clone();
         let version = args.remove(pos);
 
@@ -16,5 +16,7 @@ fn main() {
         } else {
             run_uv("python", &args);
         }
+    } else {
+        run_uv("python", &args);
     }
 }
