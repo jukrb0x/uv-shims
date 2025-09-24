@@ -30,7 +30,11 @@ pub fn run_uv(forward_to: &str, args: &Vec<String>) {
     }
 
     // Print the command with uv run
-    println!("[uv-shims] uv run {}", filtered_args.join(" "));
+    println!(
+        "[uv-shims] uv run {} {}",
+        forward_to,
+        filtered_args.join(" ")
+    );
 
     let status = Command::new("uv")
         .arg("run")
