@@ -1,0 +1,36 @@
+[package]
+name = "uv-shims"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "uv_shims"
+path = "src/lib.rs"
+
+[[bin]]
+name = "python"
+path = "src/python.rs"
+
+[[bin]]
+name = "python2"
+path = "src/python.rs"
+
+[[bin]]
+name = "python3"
+path = "src/python3.rs"
+
+[[bin]]
+name = "py"
+path = "src/py.rs"
+
+[[bin]]
+name = "pip"
+path = "src/pip.rs"
+
+[[bin]]
+name = "pip3"
+path = "src/pip3.rs"
+
+[dependencies]
+anyhow = "1.0.99"
+
